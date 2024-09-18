@@ -20,6 +20,12 @@ public class App {
         v1.modelo = "Renegade";
 
 
+        // O final não deixa atribuir outro valor para a variável
+        
+        final String teste_final;
+        teste_final = "Meu primeiro valor";
+
+
     }
 
     // Static
