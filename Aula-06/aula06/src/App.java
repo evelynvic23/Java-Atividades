@@ -1,5 +1,47 @@
 public class App {
     public static void main(String[] args) throws Exception {
+
+
+
+        utilizando_static();
+
+        // Aqui instanciei a classe Veiculo, para conseguir acessar seus dados, pois não continham o static.
+
+        //Instancia de um objeto
+        Veiculo v = new Veiculo();
+
+        //Chamando variáveis públicas
+        v.marca = "Ford";
+        v.modelo = "KA";
+
+        Veiculo v1 = new Veiculo();
+
+        v1.marca = "Fiat";
+        v1.modelo = "Renegade";
+
+
+    }
+
+    // Static
+
+    public static void utilizando_static(){
+
+        //Chamando as variáveis sem instanciar a classe, pois continham o método Static
+
+        Produto.inteiro1 = 10;
+        Produto.inteiro2 = 20;
+
+        //Aqui eu consigo mudar sem instanciar novamente a classe
+
+        Produto.inteiro1 = 14;
+
+    }
+
+
+
+
+
+    public static void conversao(){
         System.out.println("Aula 07 Conversão");
 
         String st, st2, st3, st4;
@@ -19,6 +61,11 @@ public class App {
         real2 = 1.3f;
 
         st2 = new Float(real2).toString();
+
+        //ou
+
+        st2 = String.valueOf(real2);
+        
 
         System.out.println("Float para String: " + real2);
 
@@ -46,4 +93,6 @@ public class App {
 
 
     }
+
+
 }
