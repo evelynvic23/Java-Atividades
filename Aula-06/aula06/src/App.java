@@ -15,6 +15,16 @@ public class App {
 
         System.out.println("String para float: " + real);
 
+        // Convertendo Float para String
+
+        real2 = 1.3f;
+
+        st2 = new Float(real2).toString();
+
+        System.out.println("Float para String: " + real2);
+
+
+
         
 
     }
